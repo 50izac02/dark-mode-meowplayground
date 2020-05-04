@@ -1,0 +1,25 @@
+// ==UserScript==
+// @name         cool dark mode meow pg
+// @namespace    http://tampermonkey.net/
+// @version      0.1
+// @description  this was from tampermonkey
+// @author       You
+// @match        https://www.meowplayground.com/game
+// @grant        https://www.meowplayground.com/game#
+// ==/UserScript==
+
+(function() {
+    'use strict';
+
+function changeBackground(color) {
+   document.body.style.background = color;
+}
+
+window.addEventListener("load",function() { changeBackground('black') });
+})();
+document.getElementById("header").style.backgroundColor = "#080808";
+document.getElementById("bottom-holder").style.backgroundColor = "#080808";
+document.getElementById("chat").style.backgroundColor = "#6666ff";
+document.getElementById("messages-list").style.backgroundColor = "#080808";
+document.getElementById("friends-list").style.backgroundColor = "#6666ff";
+document.getElementById("room-desc").style.backgroundColor = "#6666ff";
